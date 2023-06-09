@@ -15,13 +15,13 @@ To run the Docker-compose file
 Clone the project
 
 ```bash
-  git clone https://github.com/joa793/NBA-App.git
+  git clone https://github.com/JesusOrtizAlvarez/NBA_DRA
 ```
 
 Go to the project directory
 
 ```bash
-  cd nba-app
+  cd NBA_DRA
 ```
 ## Running Docker-compose.yml
 
