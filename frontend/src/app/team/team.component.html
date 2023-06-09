@@ -1,0 +1,26 @@
+<div class="team-component">
+  <mat-card>
+    <h1 class="mat-h1">Equipos</h1>
+    <mat-accordion>
+      <mat-expansion-panel *ngFor="let conference of conferences" class="conference-panel">
+        <mat-expansion-panel-header>
+          <mat-panel-title class="mat-h2">{{ conference.name }}</mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-list>
+          <mat-list-item *ngFor="let team of conference.teams" class="team-item">
+            <div class="team-info">
+              <img matListAvatar [src]="team.photo" alt="Escudo del equipo" />
+              <span class="team-name">{{ team.full_name }}</span>
+            </div>
+          </mat-list-item>
+        </mat-list>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </mat-card>
+</div>
+
+
+
+
+
+

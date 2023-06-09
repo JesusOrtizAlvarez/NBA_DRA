@@ -1,0 +1,58 @@
+.team-component {
+  margin-top: 20px;
+  margin-left: 250px;
+}
+
+.team-component mat-card {
+  margin: 20px;
+  padding: 20px;
+}
+
+.team-component .mat-h1 {
+  margin-bottom: 20px;
+}
+
+.team-component .conference-panel {
+  margin-bottom: 10px;
+}
+
+.team-component .team-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Ajusta el valor según la separación deseada */
+}
+
+.team-component .team-info {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.team-component img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.team-component .team-name {
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+  .team-component {
+    margin-left: 0;
+  }
+
+  .team-component mat-card {
+    margin: 10px;
+  }
+}
+
+
+
+
+

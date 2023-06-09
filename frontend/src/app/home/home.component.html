@@ -1,0 +1,49 @@
+<div class="container">
+  <h1>Resultados del día {{ fechaActualStr }}</h1>
+
+  <div class="button-container">
+    <button mat-raised-button color="primary" (click)="cambiarDia(-1)">Día anterior</button>
+    <button mat-raised-button color="primary" (click)="cambiarDia(1)">Día siguiente</button>
+  </div>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Equipo local</th>
+          <th>Puntuación local</th>
+          <th>Equipo visitante</th>
+          <th>Puntuación visitante</th>
+          <th>Conferencia</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let resultado of resultadosDelDia">
+          <td>
+            <div class="team-container">
+              <img [src]="getLogoUrl(resultado.home_team.full_name)" alt="Escudo del equipo">
+              <span>{{ resultado.home_team.full_name }}</span>
+            </div>
+          </td>
+          <td [class.resultado]="resultado.home_team_score > resultado.visitor_team_score">{{ resultado.home_team_score }}</td>
+          <td>
+            <div class="team-container">
+              <img [src]="getLogoUrl(resultado.visitor_team.full_name)" alt="Escudo del equipo">
+              <span>{{ resultado.visitor_team.full_name }}</span>
+            </div>
+          </td>
+          <td [class.resultado]="resultado.visitor_team_score > resultado.home_team_score">{{ resultado.visitor_team_score }}</td>
+          <td>{{ resultado.home_team.conference }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+
+
+
+
+
+

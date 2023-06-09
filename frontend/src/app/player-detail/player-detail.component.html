@@ -1,0 +1,51 @@
+<div class="player-detail">
+ <div class="content">
+ <div class="player-info">
+ <div *ngIf="player" class="player-details">
+ <img [src]="player.photo" alt="Player Photo">
+ <h2>{{ player.first_name }} {{ player.last_name }}</h2>
+ <p>Height: {{ player.height_feet }}'{{ player.height_inches }}''</p>
+ <p>Weight: {{ player.weight_pounds }} lbs</p>
+ <p>Position: {{ player.position }}</p>
+ </div>
+
+ <label>Seleccionar Año</label>
+ <select [(ngModel)]="selectedYear" (change)="onYearChange()">
+ <option *ngFor="let year of availableYears" [value]="year">{{ year }}</option>
+ </select>
+
+ <div class="player-seasons">
+ <h3>Estadísticas</h3>
+ <table>
+ <tr>
+ <th>Puntos</th>
+ <td>{{ totalpts }}</td>
+ </tr>
+ <tr>
+ <th>Asistencias</th>
+ <td>{{ totalast }}</td>
+ </tr>
+ <tr>
+ <th>Tapones</th>
+ <td>{{ totalblk }}</td>
+ </tr>
+ <tr>
+ <th>Rebotes</th>
+ <td>{{ totalreb }}</td>
+ </tr>
+ <tr>
+ <th>Robos</th>
+ <td>{{ totalstl }}</td>
+ </tr>
+ <tr>
+ <th>Partidos</th>
+ <td>{{ totalgames_played }}</td>
+ </tr>
+
+ </table>
+ </div>
+
+ <button (click)="savePlayer(player)">Guardar en favoritos</button>
+
+ </div>
+</div>

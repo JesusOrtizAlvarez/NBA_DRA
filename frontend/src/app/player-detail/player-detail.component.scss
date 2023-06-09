@@ -1,0 +1,63 @@
+.player-detail {
+  display: flex;
+  justify-content: center;
+ }
+
+ .content {
+  max-width: 800px;
+  padding: 20px;
+ }
+
+ .player-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+ }
+
+ .player-details {
+  text-align: center;
+ }
+
+ .player-details img {
+  width: 300px;
+  height: 230px;
+  border-radius: 80%;
+ }
+
+ .player-details h2 {
+  margin-top: 10px;
+ }
+
+ .player-details p {
+  margin: 5px 0;
+ }
+
+ .player-seasons {
+  width: 100%;
+ }
+
+ .player-seasons table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+ }
+
+ .player-seasons th,
+ .player-seasons td {
+  border: 1px solid #ddd;
+  padding: 8px;
+ }
+
+ button {
+  margin-top: 20px;
+  background-color: black; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+ }
+

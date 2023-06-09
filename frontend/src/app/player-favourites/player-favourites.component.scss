@@ -1,0 +1,56 @@
+.player-favorites-container {
+  display: flex;
+  height: 100%;
+  margin-left: 200px; /* Ajusta el valor según el ancho de tu menú lateral */
+
+  .favorites-section {
+    flex: 1;
+    overflow-y: auto;
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+
+      tr {
+        td {
+          padding: 10px;
+          vertical-align: middle;
+          border-bottom: 1px solid #ccc;
+        }
+
+        .player-image {
+          width: 100px;
+
+          img {
+            width: 30%;
+            height: auto;
+          }
+        }
+
+        .player-details {
+          h3 {
+            margin: 0;
+            font-size: 18px;
+          }
+
+          p {
+            margin: 0;
+          }
+
+          button {
+            margin-top: 10px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+.title {
+  margin: 0;
+  text-align: center;
+  padding: 20px;
+}
+
+

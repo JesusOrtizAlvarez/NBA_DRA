@@ -1,0 +1,96 @@
+.player-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+}
+
+.custom-select-panel {
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu {
+  background-color: #333;
+  color: #fff;
+  width: 200px;
+  padding: 10px;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.filters {
+  margin-bottom: 10px;
+}
+
+.content {
+  margin-left: 220px; /* Asegura que el contenido no se superponga con el menú */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 0; /* Añade un margen superior de 0 para evitar superposición */
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px; /* Añade un margen superior para evitar superposición */
+}
+
+.search-input {
+  width: 200px;
+  padding: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container {
+  margin-top: 20px; /* Ajusta el valor según tus necesidades */
+}
+
+thead th {
+  background-color: #333;
+  color: #fff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody td {
+  padding: 8px;
+}
